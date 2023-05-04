@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct FarmInfo {
+    int farmId;
+    string farmerName;
+    string address;
+    char gender;
+    float totalArea;
+    string cropVariety;
+    string ownershipStatus;
+    double latitude;
+    double longitude;
+    string fertilizerDetails;
+    float yield;
+    float sellingPrice;
+};
+
+int main() {
+    FarmInfo farm1;
+
+    farm1.farmId = 1001;
+    farm1.farmerName = "John Doe";
+    farm1.address = "123 Main St, Anytown, USA";
+    farm1.gender = 'M';
+    farm1.totalArea = 25.5;
+    farm1.cropVariety = "Wheat";
+    farm1.ownershipStatus = "Owned";
+    farm1.latitude = 37.7749;
+    farm1.longitude = -122.4194;
+    farm1.fertilizerDetails = "NPK 10-10-10";
+    farm1.yield = 100.0;
+    farm1.sellingPrice = 2.0;
+
+    // Print the farm information
+    cout << "Farm ID: " << farm1.farmId << endl;
+    cout << "Farmer Name: " << farm1.farmerName << endl;
+    cout << "Address: " << farm1.address << endl;
+    cout << "Gender: " << farm1.gender << endl;
+    cout << "Total Area: " << farm1.totalArea << " acres" << endl;
+    cout << "Crop Variety: " << farm1.cropVariety << endl;
+    cout << "Ownership Status: " << farm1.ownershipStatus << endl;
+    cout << "Latitude: " << farm1.latitude << endl;
+    cout << "Longitude: " << farm1.longitude << endl;
+    cout << "Fertilizer Details: " << farm1.fertilizerDetails << endl;
+    cout << "Yield: " << farm1.yield << " bushels" << endl;
+    cout << "Selling Price: $" << farm1.sellingPrice << " per bushel" << endl;
+
+    return 0;
+}

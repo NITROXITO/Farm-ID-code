@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct RetailPack {
+    string productID;
+    string nomenclature;
+    string packSerialNo;
+    string batchNo;
+    float netWeight;
+    float grossWeight;
+};
+
+int main() {
+    RetailPack pack1;
+
+    pack1.productID = "1234";
+    pack1.nomenclature = "Shampoo";
+    pack1.packSerialNo = "P12345";
+    pack1.batchNo = "B1234";
+    pack1.netWeight = 250.0;
+    pack1.grossWeight = 300.0;
+
+    // Print the pack information
+    cout << "Product ID: " << pack1.productID << endl;
+    cout << "Nomenclature: " << pack1.nomenclature << endl;
+    cout << "Pack Serial No: " << pack1.packSerialNo << endl;
+    cout << "Batch No: " << pack1.batchNo << endl;
+    cout << "Net Weight: " << pack1.netWeight << " g" << endl;
+    cout << "Gross Weight: " << pack1.grossWeight << " g" << endl;
+
+    return 0;
+}
